@@ -36,7 +36,9 @@
 
         {{ block "head-extra" . }}{{ end }}
 
-        <link rel="icon" type="image/png" href="{{ "assets/images/logos/favicon.png" | relURL }}">
+        <link rel="icon" type="image/svg+xml" href="{{ "icones/favicon.svg" | relURL }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ "icones/favicon-32.png" | relURL }}">
+        <link rel="apple-touch-icon" href="{{ "icones/apple-touch-icon.png" | relURL }}">
     </head>
 
     <body>
