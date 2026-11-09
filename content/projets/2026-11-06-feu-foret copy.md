@@ -11,6 +11,8 @@ photo: "/assets/images/projets/feu_foret.png"
 resume: "Traitement d'images libres via des réseaux de neurones pour la détection précoce des fumées de feux de forêt."
 ---
 
+## Description
+
 Ce projet est actuellement en cours. L'objectif est de concevoir un système capable d'analyser en continu des flux d'images issus de caméras de surveillance forestière afin de détecter rapidement les fumées et de distinguer les situations à risque des scènes sans danger.
 
 Voici ce que nous prévoyons de faire pour mener ce projet à bien :

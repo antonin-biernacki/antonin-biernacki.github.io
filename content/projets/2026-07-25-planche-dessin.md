@@ -11,10 +11,12 @@ photo: "/assets/images/projets/planche_dessin.png"
 resume: "Conception et réalisation de ma planche à dessin."
 ---
 
-<!--
-    Exemple : supprime ce fichier ou remplace-le par ton premier projet.
-    Écris ci-dessous, en Markdown, le contenu de la page dédiée au projet.
--->
+## Description
 
-Je fais des croquis en dessin depuis quelque temps et j'avais mal au dos en dessinant. J'ai alors profité de mes vacances d'été pour concevoir et réaliser cette planche à dessin à 100%. Je suis parti d'une plaque de contreplaqué en okoumé que j'ai découpée. J'ai également acheté des charnières, une poignée, des loquets et de quoi la vernir. 
+Je fais des croquis en dessin depuis quelque temps et j'avais mal au dos en dessinant. J'ai alors profité de mes vacances d'été pour concevoir et réaliser cette planche à dessin à 100 %.
+
+Je me suis créé un cahier des charges afin de répondre à mes besoins : la planche devait être au format A3, former une boîte pour mon matériel de dessin une fois fermée, être légère et robuste et enfin réglable.
+
+Je suis parti d'une plaque de contreplaqué en okoumé que j'ai découpée. J'ai également acheté des charnières, une poignée, des loquets, une baguette en chêne et de quoi la vernir.
+
 Ce projet m'a vraiment plu car il m'a permis de découvrir la menuiserie qui m'intéresse énormément et je pense refaire de nouveaux projets de ce type selon mes besoins/envies. En attendant, cette planche m'est bien utile.

@@ -11,6 +11,8 @@ photo: "/assets/images/projets/square_packing.png"
 resume: "Évaluation et comparaison de solveurs généralistes open source pour concurrencer le solveur dédié du Square Packing Problem."
 ---
 
+## Description
+
 Ce projet est actuellement en cours. Il s'intéresse au *consecutive square packing problem* : étant donné un entier N, l'objectif est de ranger tous les carrés de tailles 1 à N dans un rectangle d'aire minimale, sans chevauchement.
 
 Voici ce que nous prévoyons de faire pour mener ce projet à bien :

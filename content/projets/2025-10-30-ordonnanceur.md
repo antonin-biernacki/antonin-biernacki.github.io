@@ -11,7 +11,7 @@ photo: "/assets/images/projets/ordonnanceur.png"
 resume: "Ordonnanceur Round-Robin gérant une dizaine de tâches avec seulement 2 Ko de RAM."
 ---
 
-# Description
+## Description
 
 J'ai réalisé une carte électronique via KiCad autour d'un microcontrôleur de type ATmega, mais l'intérêt principal de ce projet réside dans la programmation d'un ordonnanceur minimal en C. Cet ordonnanceur fonctionne selon un algorithme **Round-Robin**, c'est-à-dire qu'il passe en boucle d'une tâche à une autre. 
 
