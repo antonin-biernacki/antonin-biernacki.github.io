@@ -114,6 +114,10 @@
     opacity: 0.75;
 }
 
+.single_news_intro_block:not(:has(.single_news_picture)) {
+    grid-template-columns: 1fr;
+}
+
 
 /* ---------------------------------------------------------------------------
    Content
