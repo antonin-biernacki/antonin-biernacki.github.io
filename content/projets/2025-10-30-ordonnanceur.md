@@ -1,6 +1,6 @@
 ---
 # Titre du projet
-title: "Codage d'un ordonnanceur minimal en C"
+title: "Développement d'un ordonnanceur minimal en C"
 # Date utilisée uniquement pour classer les projets (le plus récent en premier), elle n'est pas affichée
 date: "2025-10-30"
 # Statut du projet : "en_cours" ou "termine" (exactement l'une des deux valeurs)
