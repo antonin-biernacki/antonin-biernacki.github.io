@@ -30,18 +30,16 @@ linkedin: ""
 
 # Qui suis-je ?
 
-Né à Besançon en 2004, je suis actuellement étudiant en dernière année d'école d'ingénieur à Polytech Lille, spécialisé en systèmes embarqués, IoT et cybersécurité. 
+Né à Besançon en 2004, je suis en dernière année d'école d'ingénieur à Polytech Lille, spécialisé en systèmes embarqués, IoT et cybersécurité. J'ai commencé à coder au lycée, en créant de petits jeux en Python. Pendant mes études supérieures, j'ai découvert les langages bas niveau ainsi que le fonctionnement des systèmes d'exploitation, et c'est là que s'est construit mon goût pour l'embarqué.
 
-Au-delà de mes études, je suis quelqu'un de curieux et manuel. J'aime découvrir et apprendre, et ce dans mes loisirs :
-- **Dessin :** Je pratique le dessin au crayon à graphite pour réaliser des croquis (paysages, natures mortes ou monuments). Ma plus belle réalisation à mes yeux est le croquis de la cathédrale Notre-Dame de Laon.
-- **Lecture :** J'apprécie lire, plus particulièrement la philosophie et les romans d'aventure comme *L'Île mystérieuse* de Jules Verne, qui est mon auteur favori.
-- **Sports :** Je ne me considère pas comme un grand sportif, mais la pratique d'une activité physique régulière est essentielle à mon équilibre. Je fais de la course à pied et de la natation 2 à 3 fois par semaine, et j'ai déjà réalisé un semi-marathon. Dès que je le peux, j'apprécie la randonnée et le ski.
-- **Bricolage :** J'aime concevoir et fabriquer des choses de mes mains, comme en témoigne la création de ma propre planche à dessin en menuiserie.
-- **Musées, culture et architecture :** J'aime visiter les musées et apprendre sur l'histoire et l'architecture. Les lieux qui m'ont le plus marqué sont par exemple le Musée des Blindés de Saumur, le château de Chantilly ou le Musée canadien de l'histoire. 
+J'essaie aujourd'hui d'utiliser de plus en plus de logiciels open source. J'ai notamment installé Fedora sur mon ordinateur personnel pour ne plus dépendre d'un système d'exploitation intrusif, et je fais de même, petit à petit, avec les autres logiciels que j'utilise.
 
-Pour découvrir plus en détail mes réalisations techniques, vous pouvez jeter un œil à [mes projets](/projets/). Pour tout ce qui touche à mon parcours académique et professionnel, vous trouverez toutes les informations sur mon CV !
+Au-delà de mes études, je suis curieux et manuel. J'aime découvrir et apprendre, y compris dans mes loisirs :
+- **Dessin :** je pratique le croquis au crayon graphite (paysages, natures mortes, monuments). Ma plus belle réalisation, à mes yeux, est le croquis de la cathédrale Notre-Dame de Laon.
+- **Lecture :** j'aime lire, surtout de la philosophie et des romans d'aventure. *L'Île mystérieuse* de Jules Verne, mon auteur favori, en fait partie.
+- **Sport :** je ne me considère pas comme un grand sportif, mais une activité physique régulière est essentielle à mon équilibre. Je cours et je nage deux à trois fois par semaine, et j'ai déjà couru un semi-marathon. Dès que je le peux, je pars en randonnée ou je fais du ski.
 
-Pour toute question, n'hésitez pas à me contacter par mail.
+Pour découvrir en détail mes réalisations techniques, vous pouvez parcourir [mes projets](/projets/). Mon parcours académique et professionnel est présenté dans mon CV.
 
 <!--
     ===========================================================
