@@ -11,12 +11,22 @@
   src: url('/fonts/SpaceGrotesk-Regular.ttf') format('truetype')
  }
 
- 
+/* :root {
+    --pw-primary: #0C0C4F;
+    --pw-accent: #B4532A;
+    --pw-page: #F2EADF;
+    --pw-bg: #FAF6F0;
+    --pw-border: #DDD3C4;
+    --pw-muted: #8C8378;
+    --pw-font: 'Space Grotesk', sans-serif;
+} */
+
 :root {
     --pw-primary: #0C0C4F;
-    --pw-accent: #9A0000;
-    --pw-bg: #F6F6F6;
-    --pw-border: #c8c8d4;
-    --pw-muted: #9090a8;
+    --pw-accent: #b15d0fde;
+    --pw-page: #eeece8e6;
+    --pw-bg: #e9e5e1d9;
+    --pw-border: #DDD3C4;
+    --pw-muted: #8C8378;
     --pw-font: 'Space Grotesk', sans-serif;
 }

@@ -1,0 +1,31 @@
+{{/*
+    Description: Carte d'un projet : photo à gauche ; titre, statut, résumé et bouton à droite.
+    CSS: static/assets/css/pages/projets.css
+    Usage: Inclus dans layouts/projets/list.html
+*/}}
+
+{{ $projet := . }}
+<div class="projet_card">
+    {{ with $projet.Params.photo }}
+        <img class="projet_photo" src="{{ . | relURL }}" alt="{{ $projet.Title }}">
+    {{ else }}
+        <div class="projet_photo projet_photo--vide" aria-hidden="true"></div>
+    {{ end }}
+
+    <div class="projet_content">
+        <div class="projet_header">
+            <h3 class="projet_title">{{ $projet.Title }}</h3>
+            {{ if eq $projet.Params.statut "termine" }}
+                <span class="projet_tag projet_tag--termine">Terminé</span>
+            {{ else }}
+                <span class="projet_tag projet_tag--en-cours">En cours</span>
+            {{ end }}
+        </div>
+
+        {{ with $projet.Params.resume }}
+            <p class="projet_resume">{{ . }}</p>
+        {{ end }}
+
+        <a href="{{ $projet.RelPermalink }}" class="projet_btn">Voir le projet</a>
+    </div>
+</div>

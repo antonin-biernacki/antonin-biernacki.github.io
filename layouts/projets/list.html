@@ -1,0 +1,26 @@
+{{/*
+    Description: Liste de tous les projets (un seul ensemble, classés par date décroissante).
+    CSS: static/assets/css/pages/projets.css
+                          /components/base.css
+    Usage: Utilisé par content/projets/_index.md
+*/}}
+
+{{ define "head-extra" }}{{ end }}
+
+{{ define "main" }}
+    {{ if .Title }}
+        <h1 class="page-title">{{ .Title }}</h1>
+    {{ end }}
+
+    {{ $projets := .Pages.ByDate.Reverse }}
+
+    {{ if gt (len $projets) 0 }}
+        <div class="projet_grid">
+            {{ range $projets }}
+                {{ partial "projet-card.html" . }}
+            {{ end }}
+        </div>
+    {{ else }}
+        <p class="no_projet">Aucun projet à afficher pour le moment.</p>
+    {{ end }}
+{{ end }}

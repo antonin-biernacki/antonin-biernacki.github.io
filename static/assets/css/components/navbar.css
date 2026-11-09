@@ -135,7 +135,7 @@
     top: 100%;
     left: 0;
     right: 0;
-    background: #fff;
+    background: var(--pw-bg);
     border-bottom: 2px solid var(--pw-accent);
     z-index: 99;
     padding: 8px 0;

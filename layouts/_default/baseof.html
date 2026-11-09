@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 
 {{/*
-    Description: Default layout for all page including header, footer and page content.
+    Description: Layout de base de toutes les pages (en-tête, pied de page et contenu).
     CSS: static/assets/css/components/navbar.css
                                      /base.css
                                      /footer.css
     JS: static/assets/js/navbar.js
-    Usage: Used by all pages
+    Usage: Utilisé par toutes les pages
 */}}
 
 {{ $metaDescription := .Params.description | default site.Params.description }}
 {{ $ogTitle := .Title | default site.Title }}
 {{ $ogImage := .Params.og_image | default "/assets/images/logos/navbar_logo.png" }}
 
-<html lang="en">
+<html lang="fr">
 
     <head>
         <meta charset="utf-8">

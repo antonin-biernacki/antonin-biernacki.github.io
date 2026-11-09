@@ -1,24 +1,23 @@
 {{/*
-    Description: Footer of the default layout display on all pages.
+    Description: Pied de page affiché sur toutes les pages.
     CSS: static/assets/css/components/footer.css
-    Usage: Included in layouts/_default/baseof.html
+    Usage: Inclus dans layouts/_default/baseof.html
 */}}
 
 <footer class="site-footer">
     <div class="footer-container">
         <div class="footer-social">
             {{/*
-                Add your own contact / social links below, one <a> per line.
-                Remove the ones you don't need, or add more (ORCID, Google Scholar,
-                GitHub, LinkedIn, X/Twitter, Mastodon, etc.).
+                Ajoute tes liens de contact / réseaux ci-dessous, un <a> par ligne.
+                Supprime ceux dont tu n'as pas besoin.
             */}}
-            <a href="mailto:{{ site.Params.email }}">Email</a>
-            <a href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="mailto:{{ site.Params.email }}">Courriel</a>
+            <a href="https://github.com/antonin-biernacki" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <!-- <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a> -->
         </div>
 
         <div class="footer-links">
-            <p>&copy; {{ now.Format "2006" }} {{ site.Title }}, Built with Hugo</p>
+            <p>&copy; {{ now.Format "2006" }} {{ site.Title }}, créé avec Hugo</p>
         </div>
     </div>
 </footer>

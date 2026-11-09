@@ -1,0 +1,134 @@
+/**
+ * Stylesheet: page dédiée à un projet
+ * Usage: layouts/projets/single.html
+ * Variables: static/assets/css/variables.css
+ * Les styles de l'étiquette de statut (.projet_tag) sont dans pages/projets.css, repris ici.
+ */
+
+.single_projet_container {
+    max-width: 860px;
+    margin: 48px auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+    font-family: var(--pw-font);
+}
+
+.single_projet_article {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+/* En-tête : titre + statut, puis photo à gauche et résumé à droite */
+.single_projet_header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 32px;
+    background-color: var(--pw-bg);
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+.single_projet_header_top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--pw-border);
+}
+
+.single_projet_title {
+    margin: 0;
+    font-family: var(--pw-font);
+    font-size: 2.3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--pw-primary);
+    word-break: break-word;
+}
+
+/* Étiquette de statut */
+.projet_tag {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 999px;
+    border: 1px solid currentColor;
+    font-family: var(--pw-font);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+}
+
+.projet_tag--en-cours {
+    color: var(--pw-accent);
+}
+
+.projet_tag--termine {
+    color: #1f7a3d;
+}
+
+.single_projet_intro_block {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 24px;
+    align-items: start;
+}
+
+/* Sans photo, le résumé prend toute la largeur */
+.single_projet_intro_block:not(:has(.single_projet_picture)) {
+    grid-template-columns: 1fr;
+}
+
+.single_projet_picture {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.single_projet_picture img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.single_projet_resume {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: var(--pw-primary);
+    opacity: 0.8;
+}
+
+/* Contenu Markdown (la typographie vient de .prose dans base.css) */
+.single_projet_content {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding-top: 40px;
+    border-top: 2px solid var(--pw-primary);
+}
+
+@media (max-width: 680px) {
+    .single_projet_container {
+        padding: 0 12px;
+        margin: 32px auto;
+    }
+
+    .single_projet_header {
+        padding: 24px 20px;
+        margin-bottom: 28px;
+    }
+
+    .single_projet_title {
+        font-size: 1.75rem;
+    }
+
+    .single_projet_intro_block {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}

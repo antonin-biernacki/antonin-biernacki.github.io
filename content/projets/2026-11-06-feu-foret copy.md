@@ -1,0 +1,21 @@
+---
+# Titre du projet
+title: "Détection précoce des feux de forêt par apprentissage automatique"
+# Date utilisée uniquement pour classer les projets (le plus récent en premier), elle n'est pas affichée
+date: "2026-11-06"
+# Statut du projet : "en_cours" ou "termine" (exactement l'une des deux valeurs)
+statut: "en_cours"
+# Chemin de la photo, ex : /assets/images/projets/mon-projet.jpg (vide = carré gris)
+photo: "/assets/images/projets/feu_foret.png"
+# Résumé du projet
+resume: "Traitement d'images libres via des réseaux de neurones pour la détection précoce des fumées de feux de forêt."
+---
+
+Ce projet est actuellement en cours. L'objectif est de concevoir un système capable d'analyser en continu des flux d'images issus de caméras de surveillance forestière afin de détecter rapidement les fumées et de distinguer les situations à risque des scènes sans danger.
+
+Voici ce que nous prévoyons de faire pour mener ce projet à bien :
+
+* **Collecte et préparation des données :** Rassembler des jeux d'images de référence (comme FIgLib, D-Fire et des sources Kaggle), intégrant volontairement des négatifs difficiles tels que les nuages, la brume ou la poussière.
+* **Démarche méthodologique :** Mettre en place un prétraitement rigoureux (nettoyage, normalisation, augmentation) et utiliser le transfert d'apprentissage avec des poids ImageNet, suivi d'un fine-tuning.
+* **Évaluation et comparaison des modèles :** Tester et comparer plusieurs architectures de réseaux de neurones (allant du CNN simple et MobileNetV3 à ResNet50 et EfficientNet) pour trouver le meilleur compromis entre performance et légèreté.
+* **Valeur ajoutée et robustesse :** Intégrer des mécanismes de réduction des fausses alertes (règle de persistance) et valider le modèle grâce à l'explicabilité (cartes Grad-CAM) pour s'assurer qu'il cible bien les zones de fumée.

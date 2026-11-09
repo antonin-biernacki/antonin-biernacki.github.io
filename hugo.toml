@@ -1,22 +1,22 @@
 # ===========================================================================
-# Hugo configuration file
-# Replace the placeholder values below with your own.
+# Fichier de configuration Hugo
+# Remplace les valeurs ci-dessous par les tiennes.
 # ===========================================================================
 
-baseURL = "https://your-gitlab-account-name.github.io"
+baseURL = "https://antonin-biernacki.github.io"
 canonifyURLs = true
-locale = "en"
-title = "Your Name"
+locale = "fr"
+title = "Antonin Biernacki"
 
 disableKinds = ["taxonomy", "term"]
 
 [params]
-  description = "Personal website of Your Name, researcher at Your Institution."
-  email = "your.name@example.com"
+  description = "Site personnel d'Antonin Biernacki."
 
 [permalinks]
   [permalinks.page]
-    news = "/news/:slug/"
+    actualites = "/actualites/:slug/"
+    projets = "/projets/:slug/"
 
 [markup]
   [markup.goldmark]

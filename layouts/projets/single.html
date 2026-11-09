@@ -1,0 +1,45 @@
+{{/*
+    Description: Page dédiée à un projet : titre, statut, résumé, photo, puis contenu Markdown.
+    CSS: static/assets/css/single-page/single-projet.css
+                          /components/base.css
+    Usage: Utilisé par toutes les pages de la section projets
+*/}}
+
+{{ define "head-extra" }}
+    <link rel="stylesheet" href="{{ "assets/css/single-page/single-projet.css" | relURL }}">
+{{ end }}
+
+{{ define "main" }}
+<main id="primary" class="site-main single_projet_container">
+    <article class="single_projet_article">
+
+        <header class="single_projet_header">
+            <div class="single_projet_header_top">
+                <h1 class="single_projet_title">{{ .Title }}</h1>
+                {{ if eq .Params.statut "termine" }}
+                    <span class="projet_tag projet_tag--termine">Terminé</span>
+                {{ else }}
+                    <span class="projet_tag projet_tag--en-cours">En cours</span>
+                {{ end }}
+            </div>
+
+            <div class="single_projet_intro_block">
+                {{ with .Params.photo }}
+                    <div class="single_projet_picture">
+                        <img src="{{ . | relURL }}" alt="{{ $.Title }}">
+                    </div>
+                {{ end }}
+
+                {{ with .Params.resume }}
+                    <p class="single_projet_resume">{{ . }}</p>
+                {{ end }}
+            </div>
+        </header>
+
+        <section class="single_projet_content entry-content prose">
+            {{ .Content }}
+        </section>
+
+    </article>
+</main>
+{{ end }}
