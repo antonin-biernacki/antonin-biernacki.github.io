@@ -13,6 +13,8 @@ resume: "Développement d'un jeu Space Invaders en C."
 
 ## Description
 
-Le premier projet que j'ai choisi de présenter est un jeu vidéo, car l'envie de coder commence souvent par là. Ce jeu a été entièrement développé en **C** et dispose d'une interface graphique. Il a fallu gérer la logique complète : les collisions entre les différents objets ainsi que l'adaptation dynamique des déplacements au fil de la partie.
+Le premier projet que j'ai choisi de présenter est un jeu vidéo, car l'envie de coder commence souvent par là. J'ai reproduit le jeu d'arcade **Space Invaders**, entièrement développé en **C** avec une interface graphique en **SDL 1.2**. Il a fallu gérer la logique complète : les collisions entre les différents objets (missiles, bombes, boucliers, envahisseurs et joueur) ainsi que l'adaptation dynamique des déplacements au fil de la partie, les envahisseurs avançant latéralement et descendant à chaque bord atteint. Tous ces éléments sont stockés dans des **listes chaînées**, et le jeu comprend des bombes lâchées au hasard, un délai de recharge entre deux tirs, des vies, une pause et des écrans de victoire et de défaite.
 
 Ce projet aurait pu être réalisé dans un autre langage, mais ma spécialisation en systèmes embarqués m'a poussé à choisir le C afin de bien prendre en main ce langage et d'accroître mes connaissances.
+
+Si ce projet vous intéresse, vous pouvez consulter le code complet et les instructions de compilation sur [GitHub](https://github.com/antonin-biernacki/space_invaders).
