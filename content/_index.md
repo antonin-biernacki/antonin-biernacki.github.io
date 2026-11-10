@@ -37,7 +37,7 @@ J'essaie aujourd'hui d'utiliser de plus en plus de logiciels open source. J'ai n
 Concerant l'IA je trouve que c'est un outil pertinant qui est très utile. Je ne suis donc pas du tout réticent à l'utiliser au contraire. Cependant, j'essaie de l'utiliser de façon responsable mais aussi logique en définissant correctement ce que je souhaite et essayant de comprendre ce qui est fait afin de voir les limites du resultat qui m'est retourné.
 
 Au-delà de mes études, je suis curieux et manuel. J'aime découvrir et apprendre, y compris dans mes loisirs :
-- **Dessin :** je pratique le croquis au crayon graphite (paysages, natures mortes, monuments). Ma plus belle réalisation, à mes yeux, est le croquis de la cathédrale Notre-Dame de Laon.
+- **Dessin :** je pratique le croquis au crayon graphite (paysages, natures mortes, monuments). Ma plus belle réalisation, à mes yeux, est le croquis de la [cathédrale Notre-Dame de Laon](/assets/images/cathedrale_laon.png).
 - **Lecture :** j'aime lire, surtout de la philosophie et des romans d'aventure. *L'Île mystérieuse* de Jules Verne, mon auteur favori, en fait partie.
 - **Sport :** je ne me considère pas comme un grand sportif, mais une activité physique régulière est essentielle à mon équilibre. Je cours et je nage deux à trois fois par semaine, et j'ai déjà couru un semi-marathon. Dès que je le peux, je pars en randonnée ou je fais du ski.
 
