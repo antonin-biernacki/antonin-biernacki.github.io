@@ -34,7 +34,7 @@ Né à Besançon en 2004, je suis en dernière année d'école d'ingénieur à P
 
 J'essaie aujourd'hui d'utiliser de plus en plus de logiciels open source. J'ai notamment installé Fedora sur mon ordinateur personnel pour ne plus dépendre d'un système d'exploitation intrusif, et je fais de même, petit à petit, avec les autres logiciels que j'utilise.
 
-Concerant l'IA je trouve que c'est un outil pertinant qui est très utile. Je ne suis donc pas du tout réticent à l'utiliser au contraire. Cependant, j'essaie de l'utiliser de façon responsable mais aussi logique en définissant correctement ce que je souhaite et essayant de comprendre ce qui est fait afin de voir les limites du resultat qui m'est retourné.
+Concernant l'IA, je trouve que c'est un outil pertinent et très utile, et je n'hésite donc pas à l'utiliser. J'essaie cependant de le faire de façon responsable et réfléchie, en définissant précisément ce que je souhaite et en cherchant à comprendre ce qui est produit, afin de mesurer les limites du résultat qui m'est renvoyé.
 
 Au-delà de mes études, je suis curieux et manuel. J'aime découvrir et apprendre, y compris dans mes loisirs :
 - **Dessin :** je pratique le croquis au crayon graphite (paysages, natures mortes, monuments). Ma plus belle réalisation, à mes yeux, est le croquis de la [cathédrale Notre-Dame de Laon](/assets/images/cathedrale_laon.png).
