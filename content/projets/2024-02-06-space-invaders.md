@@ -9,6 +9,8 @@ statut: "termine"
 photo: "/assets/images/projets/invader_monstre1_1.png"
 # Résumé du projet
 resume: "Développement d'un jeu Space Invaders en C."
+# Lien vers le dépôt GitHub du projet (vide = pas de bouton)
+github: "https://github.com/antonin-biernacki/space_invaders"
 ---
 
 ## Description

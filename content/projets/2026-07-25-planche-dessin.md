@@ -9,6 +9,8 @@ statut: "termine"
 photo: "/assets/images/projets/planche_dessin.png"
 # Résumé du projet
 resume: "Conception et réalisation de ma planche à dessin."
+# Lien vers le dépôt GitHub du projet (vide = pas de bouton)
+github: ""
 ---
 
 ## Description

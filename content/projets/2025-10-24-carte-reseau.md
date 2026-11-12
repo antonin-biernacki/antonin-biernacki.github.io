@@ -9,6 +9,8 @@ statut: "termine"
 photo: "/assets/images/projets/carte_reseau.png"
 # Résumé du projet
 resume: "Conception sur KiCad d'une carte réseau puis code basé sur la bibliothèque LUFA."
+# Lien vers le dépôt GitHub du projet (vide = pas de bouton)
+github: "https://github.com/antonin-biernacki/carte_reseau"
 ---
 
 ## Description

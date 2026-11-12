@@ -9,6 +9,8 @@ statut: "en_cours"
 photo: "/assets/images/projets/square_packing.png"
 # Résumé du projet
 resume: "Évaluation et comparaison de solveurs généralistes open source pour concurrencer le solveur dédié du Square Packing Problem."
+# Lien vers le dépôt GitHub du projet (vide = pas de bouton)
+github: ""
 ---
 
 ## Description

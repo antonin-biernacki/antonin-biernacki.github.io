@@ -9,6 +9,8 @@ statut: "en_cours"
 photo: ""
 # Résumé du projet
 resume: "Résumé"
+# Lien vers le dépôt GitHub du projet (vide = pas de bouton)
+github: ""
 ---
 
 <!--

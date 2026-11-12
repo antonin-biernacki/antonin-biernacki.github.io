@@ -9,6 +9,8 @@ statut: "termine"
 photo: "/assets/images/projets/detecteur_fumee.png"
 # Résumé du projet
 resume: "Conception analogique d'un détecteur de fumée à base d'amplificateurs opérationnels."
+# Lien vers le dépôt GitHub du projet (vide = pas de bouton)
+github: ""
 ---
 
 ## Description

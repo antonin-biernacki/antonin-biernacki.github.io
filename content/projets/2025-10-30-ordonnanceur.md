@@ -9,6 +9,8 @@ statut: "termine"
 photo: "/assets/images/projets/ordonnanceur.png"
 # Résumé du projet
 resume: "Ordonnanceur Round-Robin gérant une dizaine de tâches avec seulement 2 Ko de RAM."
+# Lien vers le dépôt GitHub du projet (vide = pas de bouton)
+github: "https://github.com/antonin-biernacki/ordonnanceur-minimal"
 ---
 
 ## Description

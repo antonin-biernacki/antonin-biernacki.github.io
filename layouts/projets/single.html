@@ -1,5 +1,5 @@
 {{/*
-    Description: Page dédiée à un projet : titre, statut, résumé, photo, puis contenu Markdown.
+    Description: Page dédiée à un projet : titre, statut, résumé, lien GitHub, photo, puis contenu Markdown.
     CSS: static/assets/css/single-page/single-projet.css
                           /components/base.css
     Usage: Utilisé par toutes les pages de la section projets
@@ -30,8 +30,15 @@
                     </div>
                 {{ end }}
 
-                {{ with .Params.resume }}
-                    <p class="single_projet_resume">{{ . }}</p>
+                {{ if or .Params.resume .Params.github }}
+                    <div class="single_projet_intro_text">
+                        {{ with .Params.resume }}
+                            <p class="single_projet_resume">{{ . }}</p>
+                        {{ end }}
+                        {{ with .Params.github }}
+                            <a class="single_projet_github" href="{{ . }}" target="_blank" rel="noopener noreferrer">Voir le code sur GitHub</a>
+                        {{ end }}
+                    </div>
                 {{ end }}
             </div>
         </header>

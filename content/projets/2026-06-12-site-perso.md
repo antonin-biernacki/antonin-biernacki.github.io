@@ -9,6 +9,8 @@ statut: "termine"
 photo: "/assets/images/projets/hugo.png"
 # Résumé du projet
 resume: "Conception et réalisation de mon site web avec Hugo et déploiement via GitHub Pages."
+# Lien vers le dépôt GitHub du projet (vide = pas de bouton)
+github: "https://github.com/antonin-biernacki/antonin-biernacki.github.io"
 ---
 
 ## Description
