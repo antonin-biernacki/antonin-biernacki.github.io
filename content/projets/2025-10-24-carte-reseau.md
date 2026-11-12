@@ -13,7 +13,7 @@ resume: "Conception sur KiCad d'une carte réseau puis code basé sur la bibliot
 
 ## Description
 
-J'ai conçu et codé une carte réseau dans le cadre d'un projet sur les pico-ordinateurs. Le travail étant conséquent, la réalisation des différents composants a été répartie entre plusieurs binômes. Le mien a pris en charge la conception d'une carte réseau sous **KiCad**, censée permettre à une carte mère de lire, écrire et lister des fichiers sur un PC.
+Avec mon binôme, nous avons conçu et codé une carte réseau dans le cadre d'un projet sur les pico-ordinateurs. Le travail étant conséquent, la réalisation des différents composants a été répartie entre plusieurs binômes. Le nôtre a pris en charge la conception d'une carte réseau sous **KiCad**, censée permettre à une carte mère de lire, écrire et lister des fichiers sur un PC.
 
 Cette carte s'articule autour d'un microcontrôleur **ATmega**, d'un programmateur, d'une connexion USB et de divers connecteurs (LED d'état, MAX232 avec DB9 et DB25, broches libres pour la réutiliser dans d'autres projets). Une fois les circuits reçus, nous avons soudé manuellement l'ensemble des composants.
 
