@@ -30,7 +30,15 @@ linkedin: ""
 
 # Qui suis-je ?
 
-Né à Besançon en 2004, je suis en dernière année d'école d'ingénieur à Polytech Lille, spécialisé en systèmes embarqués, IoT et cybersécurité. J'ai commencé à coder au lycée, en créant de petits jeux en Python. Pendant mes études supérieures, j'ai découvert les langages bas niveau ainsi que le fonctionnement des systèmes d'exploitation, et c'est là que s'est construit mon goût pour l'embarqué. Pour découvrir en détail mes réalisations techniques, vous pouvez parcourir [mes projets](/projets/). Mon parcours académique et professionnel est présenté dans [mon CV](/assets/files/antonin_biernacki_cv.pdf).
+Je suis né à Besançon en 2004 et je suis aujourd'hui en dernière année à Polytech Lille, en systèmes embarqués, IoT et cybersécurité. Tout a commencé au lycée avec de petits jeux en Python. Puis, pendant mes études, j'ai découvert les langages bas niveau et ce qui se passe à l'intérieur d'un système d'exploitation, et je ne me suis plus vraiment éloigné de l'embarqué depuis.
+
+Mon parcours scolaire et professionnel est résumé dans [mon CV](/assets/files/antonin_biernacki_cv.pdf). Pour avoir une idée de ce que j'aime faire, voici trois de mes projets :
+
+- [Un ordonnanceur minimal en C]({{< relref "projets/2025-10-30-ordonnanceur.md" >}}), réalisé en binôme : une dizaine de tâches tournent en parallèle sur un ATmega328P qui n'a que 2 Ko de RAM.
+- [Un CTF de rétroingénierie]({{< relref "projets/2026-03-11-reverse.md" >}}) : des binaires obfusqués à décortiquer, et pour finir un vrai ransomware dont j'ai pu retrouver la clé de chiffrement.
+- [Une planche à dessin]({{< relref "projets/2026-07-25-planche-dessin.md" >}}), conçue et fabriquée pendant l'été parce que dessiner me donnait mal au dos.
+
+Les autres sont sur [la page des projets](/projets/).
 
 J'essaie aujourd'hui d'utiliser de plus en plus de logiciels open source. J'ai notamment installé Fedora sur mon ordinateur personnel pour ne plus dépendre d'un système d'exploitation intrusif, et je fais de même, petit à petit, avec les autres logiciels que j'utilise.
 
