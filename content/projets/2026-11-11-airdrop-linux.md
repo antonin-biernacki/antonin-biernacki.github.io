@@ -21,6 +21,8 @@ Je m'appuie sur deux projets de recherche de la TU Darmstadt : **OWL**, qui réi
 
 Rien n'a marché du premier coup. OWL refusait de démarrer, parce que la carte ne gère pas le mode moniteur « actif » qu'il demande. Une fois ce point contourné, OWL tournait mais ne voyait jamais l'iPhone. En comptant les trames reçues canal par canal avec **tcpdump**, j'ai isolé un comportement non documenté du firmware : en mode moniteur, la carte ne reçoit que sur le dernier canal où elle a travaillé, même quand on lui demande d'en changer. Pour le contourner, je lance un point d'accès éphémère sur le canal voulu, ce qui y amène le firmware, puis je repasse en mode moniteur. Avec ça, OWL a détecté l'iPhone et s'est synchronisé avec lui.
 
-J'ai ensuite écrit un script **Bash** qui enchaîne toute la mise en place et remet toujours le Wi-Fi en état à la fin. La couche Wi-Fi fonctionne ; il me reste à valider un vrai transfert de fichier avec OpenDrop.
+J'ai ensuite écrit un script **Bash** qui enchaîne toute la mise en place et remet toujours le Wi-Fi en état à la fin. Avec lui, l'iPhone voit le PC et s'y connecte, mais les réponses du PC n'arrivent qu'au hasard : aucun fichier n'est encore passé. Les captures désignent la carte, qui dans ce mode n'acquitte rien et n'émet chaque trame qu'une fois.
+
+**La suite** : j'ai commandé une clé USB à puce **MediaTek MT7612U**, mieux prise en charge par Linux dans ce mode, pour refaire les mêmes essais. Le projet est en pause jusqu'à sa réception.
 
 Le détail des essais, les contournements et le script sont sur [GitHub](https://github.com/antonin-biernacki/awdl-linux-poc).
