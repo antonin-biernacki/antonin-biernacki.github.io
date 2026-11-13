@@ -9,8 +9,8 @@ position: "Recherche un stage de 6 mois pour 2027"
 institution: "Polytech Lille, systèmes embarqués, IoT et cybersécurité"
 # Lien vers ta photo de profil (la photo doit se trouver dans /assets/images/photo.png)
 photo: "/assets/images/photo.png"
-# Lien vers ton CV (le fichier doit se trouver dans /assets/files/cv.pdf)
-cv: "/assets/files/antonin_biernacki_cv.pdf"
+# Lien vers la page du CV (le PDF est défini dans content/cv.md)
+cv: "/cv/"
 # Ton lien GitHub
 github: "https://github.com/antonin-biernacki"
 # Ton lien LinkedIn
@@ -32,7 +32,7 @@ linkedin: ""
 
 Je suis né à Besançon en 2004 et je suis aujourd'hui en dernière année à Polytech Lille, en systèmes embarqués, IoT et cybersécurité. Tout a commencé au lycée avec de petits jeux en Python. Puis, pendant mes études, j'ai découvert les langages bas niveau et ce qui se passe à l'intérieur d'un système d'exploitation, et je ne me suis plus vraiment éloigné de l'embarqué depuis.
 
-Mon parcours scolaire et professionnel est résumé dans [mon CV](/assets/files/antonin_biernacki_cv.pdf). Pour avoir une idée de ce que j'aime faire, voici trois de mes projets :
+Mon parcours scolaire et professionnel est résumé dans [mon CV](/cv/). Pour avoir une idée de ce que j'aime faire, voici trois de mes projets :
 
 - [Un ordonnanceur minimal en C]({{< relref "projets/2025-10-30-ordonnanceur.md" >}}), réalisé en binôme : une dizaine de tâches tournent en parallèle sur un ATmega328P qui n'a que 2 Ko de RAM.
 - [Un CTF de rétroingénierie]({{< relref "projets/2026-03-11-reverse.md" >}}) : des binaires obfusqués à décortiquer, et pour finir un vrai ransomware dont j'ai pu retrouver la clé de chiffrement.

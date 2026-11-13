@@ -1,0 +1,78 @@
+{{/*
+    Description: Affichage du CV dans la page avec PDF.js.
+    Le PDF est rendu en images dans la page : il s'affiche sur tous les appareils,
+    y compris ceux qui n'ont pas de lecteur PDF intégré (Chrome Android par exemple)
+    et qui téléchargeraient le fichier au lieu de l'ouvrir.
+    CSS: static/assets/css/pages/cv.css
+    Usage: Utilisé par content/cv.md
+*/}}
+
+{{ define "main" }}
+{{ $pdf := .Params.pdf | relURL }}
+<div class="cv-toolbar">
+    <h1 class="page-title">{{ .Title }}</h1>
+    <a class="cv-download" href="{{ $pdf }}" download>Télécharger le PDF</a>
+</div>
+
+<div id="cv-viewer" class="cv-viewer" data-pdf="{{ $pdf }}">
+    <p class="cv-message">Chargement du CV…</p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script>
+(function () {
+    var viewer = document.getElementById('cv-viewer');
+    var url = viewer.dataset.pdf;
+
+    function fallback() {
+        viewer.innerHTML = '<p class="cv-message">Impossible d\'afficher le CV ici. <a href="' + url + '">Ouvrir le PDF</a></p>';
+    }
+
+    if (!window.pdfjsLib) { fallback(); return; }
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+        'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+    var pdfDoc = null;
+
+    function render() {
+        viewer.innerHTML = '';
+        var ratio = window.devicePixelRatio || 1;
+        var width = viewer.clientWidth;
+        var chain = Promise.resolve();
+        for (var i = 1; i <= pdfDoc.numPages; i++) {
+            (function (n) {
+                chain = chain.then(function () { return pdfDoc.getPage(n); }).then(function (page) {
+                    var base = page.getViewport({ scale: 1 });
+                    var scale = width / base.width;
+                    var vp = page.getViewport({ scale: scale * ratio });
+                    var canvas = document.createElement('canvas');
+                    canvas.className = 'cv-page';
+                    canvas.width = vp.width;
+                    canvas.height = vp.height;
+                    canvas.style.width = '100%';
+                    viewer.appendChild(canvas);
+                    return page.render({ canvasContext: canvas.getContext('2d'), viewport: vp }).promise;
+                });
+            })(i);
+        }
+        return chain;
+    }
+
+    pdfjsLib.getDocument(url).promise.then(function (doc) {
+        pdfDoc = doc;
+        return render();
+    }).catch(fallback);
+
+    var lastWidth = viewer.clientWidth, timer;
+    window.addEventListener('resize', function () {
+        clearTimeout(timer);
+        timer = setTimeout(function () {
+            if (pdfDoc && Math.abs(viewer.clientWidth - lastWidth) > 40) {
+                lastWidth = viewer.clientWidth;
+                render();
+            }
+        }, 250);
+    });
+})();
+</script>
+{{ end }}

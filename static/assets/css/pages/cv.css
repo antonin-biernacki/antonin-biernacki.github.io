@@ -1,0 +1,54 @@
+/**
+ * Stylesheet: Page d'affichage du CV.
+ * Usage: layouts/_default/cv.html
+ */
+
+.cv-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    max-width: 900px;
+    margin: 0 auto 16px;
+}
+
+.cv-toolbar .page-title {
+    margin: 0;
+}
+
+.cv-download {
+    padding: 8px 18px;
+    border: 1px solid var(--pw-primary);
+    border-radius: 8px;
+    color: var(--pw-primary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none !important;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.cv-download:hover {
+    background-color: var(--pw-accent);
+    border-color: var(--pw-accent);
+    color: #FFFFFF;
+}
+
+.cv-viewer {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cv-page {
+    display: block;
+    margin-bottom: 16px;
+    border: 1px solid var(--pw-border);
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.cv-message {
+    text-align: center;
+    color: var(--pw-muted);
+}
