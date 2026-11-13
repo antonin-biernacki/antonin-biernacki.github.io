@@ -1,9 +1,9 @@
 {{/*
     Description: Rendu des liens Markdown.
-    Les liens externes (http/https), les PDF et la page CV s'ouvrent dans un nouvel onglet.
+    Les liens externes (http/https) et les PDF s'ouvrent dans un nouvel onglet.
 */}}
 {{- $u := urls.Parse .Destination -}}
-{{- $newTab := or (in (slice "http" "https") $u.Scheme) (strings.HasSuffix (lower $u.Path) ".pdf") (in (slice "/cv/" "/cv") $u.Path) -}}
+{{- $newTab := or (in (slice "http" "https") $u.Scheme) (strings.HasSuffix (lower $u.Path) ".pdf") -}}
 <a href="{{ .Destination | safeURL }}"
    {{- with .Title }} title="{{ . }}"{{ end }}
    {{- if $newTab }} target="_blank" rel="noopener noreferrer"{{ end }}>
