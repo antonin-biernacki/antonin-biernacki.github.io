@@ -23,6 +23,7 @@
         {{/* SEO */}}
         <meta name="description" content="{{ $metaDescription | plainify | truncate 160 }}">
         <link rel="canonical" href="{{ .Permalink }}">
+        {{ with site.Params.linkedin }}<link rel="me" href="{{ . }}">{{ end }}
 
         <link rel="stylesheet" href="{{ "assets/css/variables.css" | relURL }}">
         <link rel="stylesheet" href="{{ "assets/css/components/base.css" | relURL }}">

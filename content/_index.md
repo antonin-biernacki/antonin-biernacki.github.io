@@ -14,7 +14,7 @@ cv: "/cv/"
 # Ton lien GitHub
 github: "https://github.com/antonin-biernacki"
 # Ton lien LinkedIn
-linkedin: ""
+linkedin: "https://www.linkedin.com/in/antonin-biernacki"
 ---
 
 <!--

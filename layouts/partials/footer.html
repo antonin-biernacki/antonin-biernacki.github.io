@@ -13,7 +13,7 @@
             */}}
             {{ partial "email-link.html" (dict "text" "Courriel" "class" "") }}
             <a href="https://github.com/antonin-biernacki" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <!-- <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a> -->
+            {{ with site.Params.linkedin }}<a href="{{ . }}" target="_blank" rel="me noopener noreferrer">LinkedIn</a>{{ end }}
         </div>
 
         <div class="footer-links">
