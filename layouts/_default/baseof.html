@@ -9,7 +9,7 @@
     Usage: Utilisé par toutes les pages
 */}}
 
-{{ $metaDescription := .Params.description | default site.Params.description }}
+{{ $metaDescription := .Params.description | default .Params.resume | default site.Params.description }}
 {{ $ogTitle := .Title | default site.Title }}
 {{ $ogImage := .Params.og_image | default "/assets/images/logos/navbar_logo.png" }}
 
