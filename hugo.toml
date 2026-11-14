@@ -12,6 +12,8 @@ disableKinds = ["taxonomy", "term"]
 
 [params]
   description = "Site personnel d'Antonin Biernacki."
+  # L'adresse e-mail n'est pas écrite ici : elle est fournie au build par la variable
+  # d'environnement HUGO_PARAMS_EMAIL (variable SITE_EMAIL du dépôt GitHub).
 
 [permalinks]
   [permalinks.page]

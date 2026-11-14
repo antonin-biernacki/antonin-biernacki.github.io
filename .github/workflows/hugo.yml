@@ -19,6 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.140.0
+      HUGO_PARAMS_EMAIL: ${{ vars.SITE_EMAIL }}
     steps:
       - name: Install Hugo CLI
         run: |

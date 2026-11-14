@@ -11,7 +11,7 @@
                 Ajoute tes liens de contact / réseaux ci-dessous, un <a> par ligne.
                 Supprime ceux dont tu n'as pas besoin.
             */}}
-            <a href="mailto:{{ site.Params.email }}">Courriel</a>
+            {{ partial "email-link.html" (dict "text" "Courriel" "class" "") }}
             <a href="https://github.com/antonin-biernacki" target="_blank" rel="noopener noreferrer">GitHub</a>
             <!-- <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a> -->
         </div>

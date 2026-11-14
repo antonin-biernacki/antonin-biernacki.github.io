@@ -1,0 +1,15 @@
+{{/*
+    Description: Lien vers l'adresse e-mail, sans l'écrire en clair dans le HTML.
+    L'adresse vient de site.Params.email (variable d'environnement HUGO_PARAMS_EMAIL
+    au moment du build). Elle est découpée en deux parties encodées en base64,
+    et static/assets/js/email.js reconstruit le lien mailto au chargement de la page.
+    Usage: {{ partial "email-link.html" (dict "text" "Courriel" "class" "ma-classe") }}
+           "text" vide = afficher l'adresse elle-même.
+*/}}
+{{ with site.Params.email }}
+    {{ $parts := split . "@" }}
+    <a class="js-email {{ $.class }}" href="{{ "/cv/" | relURL }}"
+       data-u="{{ index $parts 0 | base64Encode }}"
+       data-d="{{ index $parts 1 | base64Encode }}"
+       {{ with $.text }}data-text="{{ . }}"{{ end }}>{{ $.text | default "Voir mon CV" }}</a>
+{{ end }}

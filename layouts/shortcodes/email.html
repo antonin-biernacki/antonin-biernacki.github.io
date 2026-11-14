@@ -1,0 +1,5 @@
+{{/*
+    Description: Lien e-mail dans un contenu Markdown, sans adresse en clair.
+    Usage: {{< email "mail" >}}
+*/}}
+{{- partial "email-link.html" (dict "text" (.Get 0) "class" "") -}}

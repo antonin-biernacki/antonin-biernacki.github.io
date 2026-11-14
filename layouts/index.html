@@ -29,9 +29,7 @@
         <p class="home-card_institution">{{ . }}</p>
         {{ end }}
 
-        {{ with .Params.email }}
-        <a class="home-card_email" href="mailto:{{ . }}">{{ . }}</a>
-        {{ end }}
+        {{ partial "email-link.html" (dict "text" "" "class" "home-card_email") }}
 
         {{ with .Params.cv }}
         <a class="home-card_cv" href="{{ . | relURL }}">Voir mon CV</a>

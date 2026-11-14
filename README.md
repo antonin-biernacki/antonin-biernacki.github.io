@@ -21,8 +21,9 @@ Site personnel construit avec **Hugo**, hébergeable sur GitHub Pages.
 
 1. Crée un dépôt public nommé `ton-compte-github.github.io`.
 2. Ajoute-y tous les fichiers de ce dossier.
-3. Dans `hugo.toml`, modifie `baseURL`, `title`, `description` et `email`.
-4. Dans les paramètres du dépôt, section **Pages**, choisis la source **GitHub Actions**.
+3. Dans `hugo.toml`, modifie `baseURL`, `title` et `description`.
+4. Dans les paramètres du dépôt, section **Secrets and variables → Actions → Variables**, crée la variable `SITE_EMAIL` avec ton adresse e-mail. Elle n'est ainsi jamais écrite dans le code, et le site ne l'affiche pas en clair dans le HTML.
+5. Dans les paramètres du dépôt, section **Pages**, choisis la source **GitHub Actions**.
 
 ## Modifier les pages
 
@@ -39,7 +40,7 @@ Couleurs et police : `static/assets/css/variables.css`
 ## Aperçu en local
 
 ```bash
-hugo server -D
+HUGO_PARAMS_EMAIL="ton.adresse@exemple.com" hugo server -D
 ```
 
 Le site est disponible sur <http://localhost:1313>.
