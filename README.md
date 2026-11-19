@@ -112,4 +112,4 @@ Pour déployer le site dans un autre compte :
 
 ## Crédits
 
-Ce site a été créé par Antonin Biernacki avec Claude. Si vous souhaitez le réutiliser, aucun problème : vous pouvez télécharger le code et le déployer dans votre dépôt personnel sans me mentionner. La seule condition est que vous retiriez tout élément personnel me concernant (mon nom, mon CV, ma photo, etc.), afin que je ne sois pas associé à un contenu dont je n'aurais pas connaissance.
+Ce site a été créé par Antonin Biernacki. Si vous souhaitez le réutiliser, aucun problème : vous pouvez télécharger le code et le déployer dans votre dépôt personnel sans me mentionner. La seule condition est que vous retiriez tout élément personnel me concernant (mon nom, mon CV, ma photo, etc.), afin que je ne sois pas associé à un contenu dont je n'aurais pas connaissance.
